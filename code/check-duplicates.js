@@ -18,6 +18,12 @@ serviceCore.forEach((component) => {
 });
 
 testIDs.forEach((keyA, i) => {
+
+  const isValid = isValidRef(keyA.ref);
+  if (!isValid) console.log(keyA)
+  
+
+  return;
   testIDs.forEach((keyB, j) => {
     if (j >= i) return;
     
@@ -29,6 +35,11 @@ testIDs.forEach((keyA, i) => {
   }); 
 });
 
+function isValidRef(txt) {
+  const regexp = /^\[[0-9A-Z]{4}\]$/;
+  regexp.test(txt);
+}
+
 function extractRef(title) {
-  return title.substring(0, 7);
+  return title.substring(0, 6);
 }
