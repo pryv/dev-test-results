@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const SERVICE_CORE_VERSION = fs.readlinkSync(path.join(__dirname, '../service-core/latest'));
-const SERVICE_CORE_LINK = fs.readlinkSync(path.join(__dirname, '../service-core', SERVICE_CORE_VERSION, 'latest'));
+const SERVICE_CORE_VERSION = fs.readlinkSync(path.join(__dirname, '..', 'service-core', 'latest'));
+const SERVICE_CORE_LINK = fs.readlinkSync(path.join(__dirname, '..', 'service-core', SERVICE_CORE_VERSION, 'latest'));
 
-const serviceCore = require(path.join(__dirname, '../service-core', SERVICE_CORE_VERSION, SERVICE_CORE_LINK));
+const serviceCore = require(path.join(__dirname, '..', 'service-core', SERVICE_CORE_VERSION, SERVICE_CORE_LINK));
 
 const testIDs = [];
 
