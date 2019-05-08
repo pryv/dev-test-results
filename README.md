@@ -3,7 +3,7 @@ Results of Pryv.io test suites
 
 ## Repositories
 
-- service-core
+- [service-core](service-core)
 
 ## Tools
 
