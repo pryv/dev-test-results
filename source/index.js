@@ -24,6 +24,14 @@ function extractTitleIdAndTitle(testTitle) {
 
 function loadTests() {
   const results = {};
+
+  const serviceStats = { 
+    tests: 0,
+    passes: 0,
+    pending: 0,
+    failures: 0
+  }
+
   Object.keys(services).forEach(service => {
     const serviceFeatures = services[service];
     const serviceVersion = fs.readlinkSync(path.join(testSrcPath, service, 'latest'));
@@ -34,6 +42,14 @@ function loadTests() {
     const cleanedComponents = [];
     components.forEach(component => { 
       if (!serviceFeatures.ignores.components.includes(component.componentName)) {
+        // update stats
+        Object.keys(serviceStats).forEach(key => {
+          if (component.stats[key]) {
+            serviceStats[key] += component.stats[key];
+          }
+        });
+
+
         component.sets = {}
         component.tests.forEach(test => {
           
@@ -59,6 +75,7 @@ function loadTests() {
     results[service] = [{ 
       version: serviceVersion,
       date: date,
+      stats: serviceStats,
       components: cleanedComponents
     }]
 

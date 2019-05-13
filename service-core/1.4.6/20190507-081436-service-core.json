@@ -2,9 +2,9 @@
   {
     "stats": {
       "suites": 163,
-      "tests": 457,
+      "tests": 453,
       "passes": 453,
-      "pending": 4,
+      "pending": 0,
       "failures": 0,
       "start": "2019-05-07T06:14:38.456Z",
       "end": "2019-05-07T06:15:56.793Z",
@@ -992,12 +992,6 @@
         "err": {}
       },
       {
-        "title": "[QT0Z] must delete history data from the storage",
-        "fullTitle": "Auditing Nightly task [QT0Z] must delete history data from the storage",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
         "title": "[2CV5] must authenticate the given credentials, open a session and return the access token",
         "fullTitle": "auth /login [2CV5] must authenticate the given credentials, open a session and return the access token",
         "duration": 148,
@@ -1260,12 +1254,6 @@
         "title": "[B766] must include event deletions (since that time) when requested",
         "fullTitle": "events GET / [B766] must include event deletions (since that time) when requested",
         "duration": 31,
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "[ESLZ] must not keep event deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
-        "fullTitle": "events GET / [ESLZ] must not keep event deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
         "currentRetry": 0,
         "err": {}
       },
@@ -2418,12 +2406,6 @@
         "err": {}
       },
       {
-        "title": "[H2GC] must return an error when the core pipeline crashes because of size",
-        "fullTitle": "Result toObject() [H2GC] must return an error when the core pipeline crashes because of size",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
         "title": "[UA7B] should return basic server meta information as JSON when requested",
         "fullTitle": "root GET / [UA7B] should return basic server meta information as JSON when requested",
         "duration": 4,
@@ -2658,12 +2640,6 @@
         "title": "[T8AM] must include stream deletions even when the given time is 0",
         "fullTitle": "streams GET / [T8AM] must include stream deletions even when the given time is 0",
         "duration": 8,
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "[1M8A] must not keep stream deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
-        "fullTitle": "streams GET / [1M8A] must not keep stream deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
         "currentRetry": 0,
         "err": {}
       },
@@ -3208,30 +3184,6 @@
       }
     ],
     "pending": [
-      {
-        "title": "[QT0Z] must delete history data from the storage",
-        "fullTitle": "Auditing Nightly task [QT0Z] must delete history data from the storage",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "[ESLZ] must not keep event deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
-        "fullTitle": "events GET / [ESLZ] must not keep event deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "[H2GC] must return an error when the core pipeline crashes because of size",
-        "fullTitle": "Result toObject() [H2GC] must return an error when the core pipeline crashes because of size",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "[1M8A] must not keep stream deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
-        "fullTitle": "streams GET / [1M8A] must not keep stream deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
-        "currentRetry": 0,
-        "err": {}
-      }
     ],
     "failures": [],
     "passes": [
