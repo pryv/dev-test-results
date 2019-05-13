@@ -14,11 +14,11 @@ function loadTests() {
     const serviceFileName = fs.readlinkSync(path.join(testSrcPath, service, serviceVersion, 'latest'));
     const date = moment(serviceFileName.substring(0, 15), 'YYYYMMDD-HHmmss').toDate();
 
-    tests[service] = { 
+    tests[service] = [{ 
       version: serviceVersion,
       date: date,
       tests: require(path.join(testSrcPath, service, serviceVersion, serviceFileName))
-    }
+    }]
   });
   return tests;
 }
