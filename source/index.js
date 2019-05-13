@@ -4,7 +4,11 @@ const moment = require('moment');
 
 const testSrcPath = path.resolve(__dirname, '../');
 
-const services = ['service-core'];
+const services = {
+  'service-core': { ignores: { 
+    components: ['business', 'model', 'tprpc']
+  }} 
+};
 
 
 const extractId = /\[([A-Z0-9]{4,})\]+(.*)/
@@ -20,38 +24,42 @@ function extractTitleIdAndTitle(testTitle) {
 
 function loadTests() {
   const results = {};
-  services.forEach(service => {
-    
+  Object.keys(services).forEach(service => {
+    const serviceFeatures = services[service];
     const serviceVersion = fs.readlinkSync(path.join(testSrcPath, service, 'latest'));
     const serviceFileName = fs.readlinkSync(path.join(testSrcPath, service, serviceVersion, 'latest'));
     const date = moment(serviceFileName.substring(0, 15), 'YYYYMMDD-HHmmss').toDate();
 
-
-    
     const components = require(path.join(testSrcPath, service, serviceVersion, serviceFileName));
+    const cleanedComponents = [];
     components.forEach(component => { 
-      component.sets = {}
-      component.tests.forEach(test => {
-        
-        const testContent = extractTitleIdAndTitle(test.title)
-        testContent.duration = test.duration
-        testContent.err = test.err
+      if (!serviceFeatures.ignores.components.includes(component.componentName)) {
+        component.sets = {}
+        component.tests.forEach(test => {
+          
+          const testContent = extractTitleIdAndTitle(test.title)
+          testContent.duration = test.duration
+          testContent.err = test.err
 
-        const setTitle = test.fullTitle.slice(0, -1 * test.title.length)
-        
-        if (!component.sets[setTitle]) {
-          component.sets[setTitle] = { tests:[] } 
-        }
-        component.sets[setTitle].tests.push(testContent)
-      })
-      delete component.tests;
+          const setTitle = test.fullTitle.slice(0, -1 * test.title.length)
+          
+          if (!component.sets[setTitle]) {
+            component.sets[setTitle] = { tests:[] } 
+          }
+          component.sets[setTitle].tests.push(testContent)
+        })
+        delete component.tests;
+
+        cleanedComponents.push(component);
+      }
     });
+    
 
     
     results[service] = [{ 
       version: serviceVersion,
       date: date,
-      components: components
+      components: cleanedComponents
     }]
 
   });
