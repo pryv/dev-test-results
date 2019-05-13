@@ -1,0 +1,22 @@
+{
+  "name": "test-results",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Tests results from Pryv.io services",
+  "author": "Pryv team <developers@pryv.com>",
+  "homepage": "https://api.pryv.com",
+  "keywords": [
+    "Pryv",
+    "developers",
+    "API",
+    "documentation"
+  ],
+  "main": "source/index.js",
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=4.4.3"
+  }
+}
