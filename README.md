@@ -9,4 +9,4 @@ Results of Pryv.io test suites
 
 ### Check duplicates test references
 
-run: `node code/check-duplicates.js` to print duplicate and missing/invalid test references.
+run: `yarn check-duplicates` to print duplicate and missing/invalid test references from the passed tests. **This ignores failures and pending.**

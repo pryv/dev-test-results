@@ -1,8 +1,0 @@
-{
-  "name": "test-results",
-  "version": "1.0.0",
-  "description": "Test results tools",
-  "main": "index.js",
-  "license": "MIT",
-  "private": true
-}

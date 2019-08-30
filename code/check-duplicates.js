@@ -9,7 +9,7 @@ const serviceCore = require(path.join(__dirname, '..', 'service-core', SERVICE_C
 const testIDs = [];
 
 serviceCore.forEach((component) => {
-  component.tests.forEach((test) => {
+  component.passes.forEach(test => {
     testIDs.push({
       ref: extractRef(test.title),
       title: test.title
@@ -20,7 +20,7 @@ serviceCore.forEach((component) => {
 testIDs.forEach((keyA, i) => {
 
   const isValid = isValidRef(keyA.ref);
-  if (!isValid) console.log('not valid', keyA)
+  if (!isValid) console.log('not valid', keyA);
   
   testIDs.forEach((keyB, j) => {
     if (j >= i) return;
@@ -28,7 +28,7 @@ testIDs.forEach((keyA, i) => {
     if (keyA.ref === keyB.ref) {
       console.log('duplicates:', keyA);
       console.log(keyA.title);
-      console.log(keyB.title)
+      console.log(keyB.title);
     }
   }); 
 });

@@ -12,6 +12,9 @@
     "documentation"
   ],
   "main": "source/index.js",
+  "scripts": {
+    "check-duplicates": "node code/check-duplicates.js"
+  },
   "dependencies": {
     "moment": "^2.24.0"
   },
