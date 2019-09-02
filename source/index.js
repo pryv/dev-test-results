@@ -6,7 +6,7 @@ const testSrcPath = path.resolve(__dirname, '../');
 
 const services = {
   'service-core': { ignores: { 
-    components: ['business', 'model', 'tprpc']
+    components: []
   }} 
 };
 
