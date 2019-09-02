@@ -9890,54 +9890,6 @@
         "err": {}
       },
       {
-        "title": "must handle data migration from v0.2.0 to v0.3.0 (skipped, obsolete)",
-        "fullTitle": "Versions must handle data migration from v0.2.0 to v0.3.0 (skipped, obsolete)",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v0.3.0 to v0.4.0 (skipped, obsolete)",
-        "fullTitle": "Versions must handle data migration from v0.3.0 to v0.4.0 (skipped, obsolete)",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v0.4.0 to v0.5.0 (skipped, obsolete)",
-        "fullTitle": "Versions must handle data migration from v0.4.0 to v0.5.0 (skipped, obsolete)",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v0.5.0 to v0.7.0",
-        "fullTitle": "Versions must handle data migration from v0.5.0 to v0.7.0",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v0.7.0 to v0.7.1",
-        "fullTitle": "Versions must handle data migration from v0.7.0 to v0.7.1",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v0.7.1 to 1.2.0",
-        "fullTitle": "Versions must handle data migration from v0.7.1 to 1.2.0",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v1.2.0 to v1.2.5",
-        "fullTitle": "Versions must handle data migration from v1.2.0 to v1.2.5",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v1.3.37 to 1.3.40",
-        "fullTitle": "Versions must handle data migration from v1.3.37 to 1.3.40",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
         "title": "[CRPD] must handle data migration from v1.3.40 to 1.4.0",
         "fullTitle": "Versions [CRPD] must handle data migration from v1.3.40 to 1.4.0",
         "duration": 3057,
