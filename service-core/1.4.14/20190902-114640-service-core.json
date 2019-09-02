@@ -2,9 +2,9 @@
   {
     "stats": {
       "suites": 219,
-      "tests": 497,
+      "tests": 493,
       "passes": 493,
-      "pending": 4,
+      "pending": 0,
       "failures": 0,
       "start": "2019-09-02T09:46:41.767Z",
       "end": "2019-09-02T09:48:03.436Z",
@@ -3487,32 +3487,7 @@
         "err": {}
       }
     ],
-    "pending": [
-      {
-        "title": "[QT0Z] must delete history data from the storage",
-        "fullTitle": "Auditing Nightly task [QT0Z] must delete history data from the storage",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "[ESLZ] must not keep event deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
-        "fullTitle": "events GET / [ESLZ] must not keep event deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "[H2GC] must return an error when the core pipeline crashes because of size",
-        "fullTitle": "Result toObject() [H2GC] must return an error when the core pipeline crashes because of size",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "[1M8A] must not keep stream deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
-        "fullTitle": "streams GET / [1M8A] must not keep stream deletions past a certain time (cannot test because cannot force-run Mongo's TTL cleanup task)",
-        "currentRetry": 0,
-        "err": {}
-      }
-    ],
+    "pending": [],
     "failures": [],
     "passes": [
       {
@@ -9877,9 +9852,9 @@
   {
     "stats": {
       "suites": 4,
-      "tests": 13,
+      "tests": 5,
       "passes": 5,
-      "pending": 8,
+      "pending": 0,
       "failures": 0,
       "start": "2019-09-02T09:48:26.352Z",
       "end": "2019-09-02T09:48:29.809Z",
@@ -9970,56 +9945,7 @@
         "err": {}
       }
     ],
-    "pending": [
-      {
-        "title": "must handle data migration from v0.2.0 to v0.3.0 (skipped, obsolete)",
-        "fullTitle": "Versions must handle data migration from v0.2.0 to v0.3.0 (skipped, obsolete)",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v0.3.0 to v0.4.0 (skipped, obsolete)",
-        "fullTitle": "Versions must handle data migration from v0.3.0 to v0.4.0 (skipped, obsolete)",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v0.4.0 to v0.5.0 (skipped, obsolete)",
-        "fullTitle": "Versions must handle data migration from v0.4.0 to v0.5.0 (skipped, obsolete)",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v0.5.0 to v0.7.0",
-        "fullTitle": "Versions must handle data migration from v0.5.0 to v0.7.0",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v0.7.0 to v0.7.1",
-        "fullTitle": "Versions must handle data migration from v0.7.0 to v0.7.1",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v0.7.1 to 1.2.0",
-        "fullTitle": "Versions must handle data migration from v0.7.1 to 1.2.0",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v1.2.0 to v1.2.5",
-        "fullTitle": "Versions must handle data migration from v1.2.0 to v1.2.5",
-        "currentRetry": 0,
-        "err": {}
-      },
-      {
-        "title": "must handle data migration from v1.3.37 to 1.3.40",
-        "fullTitle": "Versions must handle data migration from v1.3.37 to 1.3.40",
-        "currentRetry": 0,
-        "err": {}
-      }
-    ],
+    "pending": [],
     "failures": [],
     "passes": [
       {
