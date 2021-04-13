@@ -3,14 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "description": "Tests results from Pryv.io services",
-  "author": "Pryv team <developers@pryv.com>",
-  "homepage": "https://api.pryv.com",
   "keywords": [
     "Pryv",
     "developers",
     "API",
     "documentation"
   ],
+  "homepage": "https://api.pryv.com",
+  "license": "UNLICENSED",
+  "author": "Pryv S.A. <info@pryv.com> (https://pryv.com)",
   "main": "source/index.js",
   "scripts": {
     "check-duplicates": "node code/check-duplicates.js"
